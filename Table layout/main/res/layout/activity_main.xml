@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/txt1">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Signup to see photos and videos from your friends"
+        android:textSize="10dp"
+        android:id="@+id/txt2">
+
+    </TextView>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:id="@+id/mail">
+    </EditText>
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Enter Full Name"
+    android:id="@+id/fl">
+</EditText>
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Enter Last Name"
+    android:id="@+id/la">
+    </EditText>
+
+<EditText
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:hint="Enter Password"
+android:inputType="textPassword"
+android:id="@+id/pwd">
+</EditText>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:id="@+id/b1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:id="@+id/b2"/>
+    </TableRow>
+</TableLayout>
