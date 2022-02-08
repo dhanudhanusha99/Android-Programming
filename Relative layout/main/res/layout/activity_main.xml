@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cac"
+    android:id="@+id/date"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text="Facebook"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fb"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text=" Create a new account"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acc"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPersonName"
+        android:text="firstname" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/fname"
+        android:inputType="textPersonName"
+        android:text="Surname" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fname"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:text="Mobile number" />
+    <EditText
+        android:id="@+id/psd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPassword"
+        android:text="New Password" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/psd"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:text="Date of Birth"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dob"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/date" />
+
+
+    <Spinner
+        android:id="@+id/date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dob"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/mon" />
+
+    <Spinner
+        android:id="@+id/date3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dob"
+        android:layout_marginLeft="220dp"
+
+
+        android:layout_marginTop="8dp"
+        android:entries="@array/yr" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/date3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:text="Gender" />
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:text="Male" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/radioButton1"
+        android:text="Female" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioButton2"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="signup" />
+</RelativeLayout>
